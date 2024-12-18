@@ -1,7 +1,9 @@
-## I used 80 - 20 split of cancer blood images. For one class. 
-##This gave me accurate results accordingly. 
-##So whenever I give a normal blood sample as input, it provides an accurate output. 
-##Also I have fine tuned the output validation on the other script as well.
+#input dataset format = .tiff
+#input dataset splitup = 80 - 20
+#image dimension = 64 * 64
+#epochs = 20
+#accuracy = 79.80%
+
 
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
