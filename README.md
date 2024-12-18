@@ -5,4 +5,8 @@ This project focuses on developing a deep learning-based solution to detect canc
 - Image Preprocessing: Resizing and normalizing blood cell images to prepare them for training. 🖼️🔧
 - Model Training: Training a CNN to classify blood cells as cancerous or normal. 📚🤖
 - Model Inference: Using the trained model to predict whether a given blood cell image is cancerous or normal. 🔍📊
-- This deep learning model can perform inference on both TIFF and JPEG blood cell images. The project demonstrates the application of CNNs in medical image classification, with the potential for further improvements and integration into real-world diagnostic systems. 🌍💡
+- This deep learning model can perform inference on both TIFF and JPEG blood cell images.
+
+The project demonstrates the application of CNNs in medical image classification, with the potential for further improvements and integration into real-world diagnostic systems. 🌍💡
+
+The project holds *79%* Accuracy for detecting Blood Cells effected by Cancer.
