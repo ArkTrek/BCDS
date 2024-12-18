@@ -15,9 +15,7 @@ def preprocess_image(image_path, target_size=(64, 64)):
     return img
 
 test_image_path = "Test_Image_Path"
-
-test_image = preprocess_image(test_image_path)
-S
+test_image = preprocess_image(test_image_path)\
 prediction = model.predict(test_image)
 
 img = Image.open(test_image_path)
