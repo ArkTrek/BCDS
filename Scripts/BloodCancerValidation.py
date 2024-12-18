@@ -16,7 +16,7 @@ def preprocess_image(image_path, target_size=(64, 64)):
     img = np.expand_dims(img, axis=0)  # Add batch dimension
     return img
 
-test_image_path = "C://Users//ar646//Desktop//cancerDet//Test//ccell.jpg"  # Replace with the actual JPEG image path
+test_image_path = "Test_Image_Path"  # Replace with the actual JPEG image path
 
 # Preprocess the image
 test_image = preprocess_image(test_image_path)
