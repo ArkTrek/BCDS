@@ -1,4 +1,10 @@
 #input dataset format = Any Image Format
+#input dataset splitup = 80 - 20
+#image dimension = 64 * 64
+#epochs = 20
+#accuracy = 79.80%
+#logic = Training was done for pure cancer cells only. So, when I show something that was not trained, it will show non-cancerous cell.
+
 
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
