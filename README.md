@@ -9,4 +9,6 @@ This project focuses on developing a deep learning-based solution to detect canc
 
 The project demonstrates the application of CNNs in medical image classification, with the potential for further improvements and integration into real-world diagnostic systems. 🌍💡
 
+---
+
 The project holds *79%* Accuracy for detecting Blood Cells effected by Cancer.
