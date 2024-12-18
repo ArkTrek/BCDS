@@ -1,3 +1,8 @@
+## I used 80 - 20 split of cancer blood images. For one class. 
+##This gave me accurate results accordingly. 
+##So whenever I give a normal blood sample as input, it provides an accurate output. 
+##Also I have fine tuned the output validation on the other script as well.
+
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
@@ -13,7 +18,7 @@ import matplotlib.pyplot as plt
 tf.random.set_seed(42)
 
 # Set dataset path
-dataset_path = 'C://Users//ar646//Desktop//cancerDet//Dataset//Blood_Cancer'
+dataset_path = 'Blood_Cancer_Dataset_path'
 
 # Image dimensions
 IMG_HEIGHT = 64
@@ -115,7 +120,7 @@ print(f"Validation Loss: {loss}")
 print(f"Validation Accuracy: {accuracy}")
 
 # Save the model
-model.save('blood_cancer_classifier.h5')
+model.save('BCDS.h5')
 
 # Plot training and validation metrics
 plt.figure(figsize=(12, 4))
