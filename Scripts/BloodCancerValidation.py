@@ -6,22 +6,18 @@ import matplotlib.pyplot as plt
 
 model = tf.keras.models.load_model('BCDS.h5')
 
-# Function to preprocess the image
 def preprocess_image(image_path, target_size=(64, 64)):
-    # Load the image using PIL
     img = Image.open(image_path)
-    img = img.convert('RGB')  # Convert to RGB if not already
-    img = img.resize(target_size)  # Resize to the input size of the model
-    img = np.array(img) / 255.0  # Normalize the pixel values to [0, 1]
-    img = np.expand_dims(img, axis=0)  # Add batch dimension
+    img = img.convert('RGB')
+    img = img.resize(target_size)
+    img = np.array(img) / 255.0 
+    img = np.expand_dims(img, axis=0)
     return img
 
-test_image_path = "Test_Image_Path"  # Replace with the actual JPEG image path
+test_image_path = "Test_Image_Path"
 
-# Preprocess the image
 test_image = preprocess_image(test_image_path)
-
-# Make a prediction using the model
+S
 prediction = model.predict(test_image)
 
 img = Image.open(test_image_path)
